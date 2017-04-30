@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/cursor.css">
+		<title>Description shopping</title>
+		<link rel="stylesheet" href="css/loader.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/tag.css">
+	</head>
+	<body background="http://www.opera.com/blogs/indonesia/wp-content/uploads/sites/9/2015/05/secure_shopping-copy.jpg">
+		<div class="loader"></div>
+		<div class="brand clearfix ">
+
+			<a class="navbar-brand" href="index.html"><i class="glyphicon glyphicon-home" aria-hidden="true"> HOME</i></a>
+			<a class="navbar-brand" href="#">
+
+						<ul class="container">
+							<a class="navbar-brand" href="#">
+								<li><a href="dashboard.html" class="dashboard"></i>Description</a></li>
+								<li><a href="account.html" class="account">Account</a></li>
+								<li><a href="my-profile.html" class="my-profile">Profile</a></li>
+								<li><a href="index.html" onclick="deleteCookie()">Log out</a></li>
+						</ul>
+						</i></a>
+
+		</div>
+		<div class="ts-main-content">
+
+			<div class="content-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<br><br>
+						<h2 class="page-title">Description</h2>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+												<div class="panel panel-default">
+
+													<div class="stat-panel text-center">
+														<div class="stat-panel-number h1 ">Profile</div>
+														<div class="stat-panel-title text-uppercase"></div>
+													</div>
+
+												<a href="my-profile.html" class="my-profile block-anchor panel-footer">Full Detail <i class="glyphicon glyphicon-ok"></i></a>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="panel panel-default">
+
+													<div class="stat-panel text-center">
+														<div class="stat-panel-number h1 ">Account</div>
+														<div class="stat-panel-title text-uppercase"></div>
+													</div>
+
+												<a href="account.html" class="account block-anchor panel-footer">Full Detail  &nbsp; <i class="glyphicon glyphicon-ok"></i></a>
+											</div>
+										</div>
+										<div class="movie_item_toolbar" style="clear: both; vertical-align: bottom; width: 100%; height: 25px;">
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/cache.js"></script>
+		<script type="text/javascript" src="js/loader.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/dashboard.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			console.log($.cookie('keep'));
+
+			function deleteCookie() {
+			    $.removeCookie('keep');
+			    console.log($.removeCookie('keep'));
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/cursor.css">
+		<title>shopping account</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body background="http://www.opera.com/blogs/indonesia/wp-content/uploads/sites/9/2015/05/secure_shopping-copy.jpg">
+
+		<div class="brand clearfix ">
+
+			<a class="navbar-brand" href="index.html"><i class="glyphicon glyphicon-home" aria-hidden="true"> HOME</i></a>
+			<a class="navbar-brand" href="#">
+				<ul class="container">
+					<a class="navbar-brand" href="#">
+						<li><a href="dashboard.html" class="description"></i>Description</a></li>
+						<li><a href="account.html" class="account">Account</a></li>
+						<li><a href="my-profile.html" class="my-profile">Profile</a></li>
+						<li><a href="index.html" clonclick="deleteCookie()">Log out</a></li>
+				</ul>
+				</i></a>
+		</div>
+
+
+			<div class="content-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<br><br>
+							<h2 class="page-title"><span class="fname"></span>'s Account</h2>
+							<div class="row">
+								<div class="col-md-6">
+
+										<div class="panel-heading"><h4>Account</h4></div>
+										<div class="panel-body">
+											<form class="form-horizontal" action="#" method="POST" role="form">
+												<div class="form-group">
+													<label for="username" class="col-sm-2 control-label">Username </label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="username" name="username" disabled>
+														<span class="help-block m-b-none">Username can't be changed.</span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="email" class="col-sm-2 control-label">E-Mail Address</label>
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="email" name="email">
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-10">
+														<input type="password" class="form-control" id="password" name="password" disabled style="display: none;">
+														<input type="text" class="form-control" id="fname" name="fname" disabled style="display: none;">
+														<input type="text" class="form-control" id="lname" name="lname" disabled style="display: none;">
+														<input type="text" class="form-control" id="tel" name="tel" disabled style="display: none;">
+													</div>
+												</div>
+												<div class="col-sm-8 col-sm-offset-2">
+													<button type="button" name="button" class="cancel btn btn-default">Cancel</button>
+													<button type="button" name="button" id="save" class="btn btn-danger">Update Account</button>
+												</div>
+											</form>
+										</div>
+										<br>
+
+									<div id="suc" style="display:none" class="alert alert-success alert-dismissable fade in">
+										<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+										<strong>Update Successful!!!</strong>
+									</div>
+								</div>
+								<div class="col-md-6">
+
+										<div class="panel-heading"><h4>Password</h4></div>
+										<div class="panel-body">
+											<form id="change" class="form-horizontal" action="#" method="POST" role="form">
+												<div class="form-group">
+													<label class="col-sm-4 control-label">Old Password</label>
+													<div class="col-sm-8">
+														<input type="password" class="form-control" id="oldpassword" name="oldpassword" placeholder="The max length 5 to 12" maxlength="12">
+														<span></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-4 control-label">New Password</label>
+													<div class="col-sm-8">
+														<input type="password" class="form-control" id="npassword" name="npassword" placeholder="The max length 5 to 12" maxlength="12">
+														<span></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<label class="col-sm-4 control-label">Confirm Password</label>
+													<div class="col-sm-8">
+														<input type="password" class="form-control" id="cpassword" name="cpassword" placeholder="The max length 5 to 12" maxlength="12">
+														<span></span>
+													</div>
+												</div>
+												<div class="form-group">
+													<div class="col-sm-10">
+														<input type="text" class="form-control" id="username" name="username" disabled style="display: none;">
+														<input type="text" class="form-control" id="fname" name="fname" disabled style="display: none;">
+														<input type="text" class="form-control" id="lname" name="lname" disabled style="display: none;">
+														<input type="text" class="form-control" id="tel" name="tel" disabled style="display: none;">
+														<input type="text" class="form-control" id="email" name="email" disabled style="display: none;">
+													</div>
+												</div>
+												<div class="col-sm-8 col-sm-offset-2">
+													<button type="button" name="button" class="cancel btn btn-default">Cancel</button>
+													<button type="submit" name="button" id="edit" class="btn btn-danger">Change Password</button>
+												</div>
+
+											</form>
+										</div>
+
+
+									<div id="err2" style="display:none" class="alert alert-success alert-dismissable fade in">
+										<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+										<strong>Change Successfully</strong>
+									</div>
+									<div id="err4" style="display:none" class="alert alert-danger alert-dismissable fade in">
+										<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+										<strong>Incorrect!!! : </strong>
+										<span style="color:blue;font-weight:bold" id="summary4">
+										Forms with many errors! Please try again.</span>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/cache.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/account.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			console.log($.cookie('keep'));
+
+			function deleteCookie() {
+			    $.removeCookie('keep');
+			    console.log($.removeCookie('keep'));
+			}
+		</script>
+	</body>
+</html>

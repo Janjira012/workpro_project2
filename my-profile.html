@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/cursor.css">
+		<title>Profile</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/image.css">
+	</head>
+	<body background="http://www.opera.com/blogs/indonesia/wp-content/uploads/sites/9/2015/05/secure_shopping-copy.jpg">
+
+		<div class="loader"></div>
+		<div class="brand clearfix ">
+
+			<a class="navbar-brand" href="index.html"><i class="glyphicon glyphicon-home" aria-hidden="true"> HOME</i></a>
+			<a class="navbar-brand" href="#">
+
+						<ul class="container">
+							<a class="navbar-brand" href="#">
+								<li><a href="dashboard.html" class="dashboard"></i>Description</a></li>
+								<li><a href="account.html" class="account">Account</a></li>
+								<li><a href="my-profile.html" class="my-profile">Profile</a></li>
+								<li><a href="index.html" onclick="deleteCookie()">Log out</a></li>
+						</ul>
+						</i></a>
+
+		</div>
+		<div class="ts-main-content">
+		<div class="ts-main-content">
+			<div class="content-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12">
+							<br><br>
+							<h2 class="page-title"><span class="fname"></span>'s&nbsp;Profile </h2>
+							<div class="row">
+
+								<br>
+								<div class="col-md-9">
+
+
+										<font color="#ff0066"><h3>Profile</h3></font>
+
+										<div class="panel-body">
+											<form class="form-horizontal" action="#" method="POST" role="form">
+												<div class="form-group">
+													<label for="id" class="col-sm-2 control-label">
+														<font color="#ff0066">ID </font></label>
+													<div class="col-sm-8">
+														<input type="text" class="col-sm-2 form-control" id="id" name="id" disabled>
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="fname" class="col-sm-2 control-label"><font color="#ff0066">First name</font></label>
+													<div class="col-sm-8">
+														<input type="text" class="form-control" id="fname" name="fname">
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="lname" class="col-sm-2 control-label"><font color="#ff0066">Last name</font></label>
+													<div class="col-sm-8">
+														<input type="text" class="form-control" id="lname" name="lname">
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="email" class="col-sm-2 control-label"><font color="#ff0066">E-Mail Address</font></label>
+													<div class="col-sm-8">
+														<input type="email" class="form-control" id="email" name="email">
+													</div>
+												</div>
+												<div class="form-group">
+													<label for="tel" class="col-sm-2 control-label"><font color="#ff0066">Telephone</font></label>
+													<div class="col-sm-8">
+														<input type="text" class="form-control" id="tel" name="tel">
+													</div>
+												</div>
+												<input type="hidden" id="username" name="username" value="E">
+												<input type="hidden" id="password" name="password" value="E">
+												<div class="col-sm-6 col-sm-offset-2">
+													<button type="button" name="button" class="cancel btn btn-default">Cancel</button>
+													<button type="button" name="button" id="save" class="btn btn-danger">Update Profile</button>
+												</div>
+											</form>
+										</div>
+
+
+								</div>
+							</div>
+							<div id="err" style="display:none" class="alert alert-success alert-dismissable fade in">
+								<a href="#" class="close" data-dismiss="alert" aria-label="close">x</a>
+								<strong>Update Successful!!!</strong>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/cache.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/my-profile.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			console.log($.cookie('keep'));
+			function deleteCookie() {
+			    $.removeCookie('keep');
+			    console.log($.removeCookie('keep'));
+			}
+		</script>
+	</body>
+</html>
