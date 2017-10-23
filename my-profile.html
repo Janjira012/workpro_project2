@@ -25,7 +25,7 @@
 								<li><a href="dashboard.html" class="dashboard"></i>Description</a></li>
 								<li><a href="account.html" class="account">Account</a></li>
 								<li><a href="my-profile.html" class="my-profile">Profile</a></li>
-								<li><a href="index.html" onclick="deleteCookie()">Log out</a></li>
+								<li><a href="index.html" >Log out</a></li>
 						</ul>
 						</i></a>
 
@@ -79,6 +79,12 @@
 														<input type="text" class="form-control" id="tel" name="tel">
 													</div>
 												</div>
+												<div class="form-group">
+													<label for="url" class="col-sm-2 control-label"><font color="#ff0066">URL</font></label>
+													<div class="col-sm-8">
+														<input type="text" class="form-control" id="url" name="url">
+													</div>
+												</div>
 												<input type="hidden" id="username" name="username" value="E">
 												<input type="hidden" id="password" name="password" value="E">
 												<div class="col-sm-6 col-sm-offset-2">
@@ -107,11 +113,11 @@
 		<script type="text/javascript" src="js/my-profile.js"></script>
 		<script type="text/javascript" src="js/jquery.cookie.js"></script>
 		<script type="text/javascript">
-			console.log($.cookie('keep'));
-			function deleteCookie() {
-			    $.removeCookie('keep');
-			    console.log($.removeCookie('keep'));
-			}
+			// console.log($.cookie('keep'));
+			// function deleteCookie() {
+			//     $.removeCookie('keep');
+			//     console.log($.removeCookie('keep'));
+			// }
 		</script>
 	</body>
 </html>
