@@ -21,16 +21,7 @@
       "tel": "0123456789",
       "url": "http://placekitten.com/g/200/200",
       "id": 3
-    },
-    {
-      "username": "",
-      "password": "",
-      "con_password": "",
-      "firstname": "",
-      "lastname": "",
-      "email": "",
-      "tel": "",
-      "id": 4
     }
+  
   ]
 }
