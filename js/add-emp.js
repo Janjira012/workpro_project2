@@ -120,6 +120,6 @@ $(document).ready(function() {
         });
     } else {
         console.log('no cookie');
-       // window.location.href = "signin.html"
+       window.location.href = "signin.html"
     }
 });
