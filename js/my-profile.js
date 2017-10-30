@@ -56,8 +56,9 @@ $(function () {
             newuser.lastname = $("#lname").val();
             newuser.email = $("#email").val();
             newuser.tel = $("#tel").val();
-            newuser.url = $("#url").val();
             
+            newuser.url = $("#url").val();
+
             console.log(JSON.stringify(newuser));
             var updateUrl = "http://localhost:3000/data/" + data.id;
             $.ajax({
