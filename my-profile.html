@@ -4,13 +4,22 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/cursor.css">
+		
 		<title>Profile</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/image.css">
+		<script src="js/onsenui.min.js"></script>
+        <script src="js/jquery-3.2.1.min.js"></script>
+		
+		
 	</head>
 	<body background="http://www.opera.com/blogs/indonesia/wp-content/uploads/sites/9/2015/05/secure_shopping-copy.jpg">
 
@@ -91,9 +100,11 @@
 														<input type="text" class="form-control" id="url" name="url">
 													</div>
 												</div>
+				
 												<input type="hidden" id="username" name="username" value="E">
 												<input type="hidden" id="password" name="password" value="E">
 												<div class="col-sm-6 col-sm-offset-2">
+													<ons-button id="hello">Take a photo</ons-button>
 													<button type="button" name="button" class="cancel btn btn-default">Cancel</button>
 													<button type="button" name="button" id="save" class="btn btn-danger">Update Profile</button>
 												</div>
@@ -118,6 +129,7 @@
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/my-profile.js"></script>
 		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
 		<script type="text/javascript">
 			// console.log($.cookie('keep'));
 			// function deleteCookie() {
